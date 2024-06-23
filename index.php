@@ -5,8 +5,8 @@ class Movie
     public $description;
     public $year;
     public $genre;
-    public function saluto($description){
-        echo $description;
+    public function stampa(){
+        echo "$this->name $this->year";
     }
 }
 $film = new Movie();
@@ -47,7 +47,7 @@ $lista = [$film, $unAltroFilm];
             Genere : <?= $film->genre ?>
         </li>
         <li>
-            Saluto : <?php $film->saluto("ciao") ?>
+            infoRapidi : <?php $film->stampa() ?>
         </li>
     </ul>
 
@@ -65,7 +65,7 @@ $lista = [$film, $unAltroFilm];
             Genere : <?= $unAltroFilm->genre ?>
         </li>
         <li>
-            Saluto : <?php $unAltroFilm->saluto("ciao") ?>
+            infoRapidi : <?php $unAltroFilm->stampa() ?>
         </li>
     </ul> 
 </body>
